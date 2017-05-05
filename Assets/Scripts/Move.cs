@@ -13,19 +13,19 @@ public class Move : MonoBehaviour {
 	void Update () {
 		if (Input.GetKey("w"))
         {
-            transform.position += transform.up;
+            transform.position += new Vector3(0, 0.7f, 0);
         }
         if(Input.GetKey("d"))
         {
-            transform.position += transform.right;
+            transform.position += new Vector3(0.7f, 0, 0);
         }
         if(Input.GetKey("s"))
         {
-            transform.position += transform.up * -1.0f;
+            transform.position += new Vector3(0, -0.7f, 0);
         }
         if(Input.GetKey("a"))
         {
-            transform.position += transform.right * -1.0f;
+            transform.position += new Vector3(-0.7f, 0, 0);
         }
 	}
 }
