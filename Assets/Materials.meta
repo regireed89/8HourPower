@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: ccc52d4b2417c4847acb3aa498715392
 folderAsset: yes
 timeCreated: 1493994920
+=======
+guid: 70daf989bb0ce484288317d106c9bb91
+folderAsset: yes
+timeCreated: 1493995652
+>>>>>>> refs/remotes/chuwilliamson/master
 licenseType: Pro
 DefaultImporter:
   userData: 

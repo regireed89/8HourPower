@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 22edacd620c2a174884ec4c5ae00d9ce
 timeCreated: 1493995228
+=======
+guid: 80ddda87856924c4392d7374e00554c0
+timeCreated: 1493995657
+>>>>>>> refs/remotes/chuwilliamson/master
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName: {}
