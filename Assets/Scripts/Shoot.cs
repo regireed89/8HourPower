@@ -10,13 +10,16 @@ public class Shoot : MonoBehaviour {
 		
 	}
 	
+    
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown("space"))
         {
+            
             g = Instantiate(prefab, transform, false);
-            g.GetComponent<Rigidbody>().velocity += transform.TransformDirection(50, 0, 0);
-            Destroy(g, 2);
+            g.transform.SetParent(null);
+            g.GetComponent<Rigidbody>().velocity += transform.TransformDirection(100, 0, 0);
+            Destroy(g, 5);
         }
        
 	}
