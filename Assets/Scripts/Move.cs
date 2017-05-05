@@ -15,9 +15,17 @@ public class Move : MonoBehaviour {
         {
             transform.position += transform.up;
         }
-        if(Input.GetKey("a"))
+        if(Input.GetKey("d"))
         {
             transform.position += transform.right;
+        }
+        if(Input.GetKey("s"))
+        {
+            transform.position += transform.up * -1.0f;
+        }
+        if(Input.GetKey("a"))
+        {
+            transform.position += transform.right * -1.0f;
         }
 	}
 }
