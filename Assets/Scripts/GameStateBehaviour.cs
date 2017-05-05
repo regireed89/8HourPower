@@ -9,6 +9,7 @@ public class GameStateBehaviour : MonoBehaviour
     public AudioClip unpauseClip;    
     public Button unpauseButton;
     public Button restartButton;
+    public Button quitButton;
 
     private void Start()
     {
@@ -16,6 +17,7 @@ public class GameStateBehaviour : MonoBehaviour
     }
     public void Pause()
     {
+        restartButton.gameObject.SetActive(true);
         unpauseButton.gameObject.SetActive(true);
         GameAudio.clip = pauseClip;
         GameAudio.Play();
@@ -29,14 +31,15 @@ public class GameStateBehaviour : MonoBehaviour
         GameAudio.Play();
         Time.timeScale = 1f;
     }
-
-    public void Restart()
-    {
-        restartButton.gameObject.SetActive(true);
-    }
-
+    
     public void ResetScene()
     {
+        UnPause();
         SceneManager.LoadScene(0);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

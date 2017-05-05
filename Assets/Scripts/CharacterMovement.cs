@@ -5,14 +5,17 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     public WheelJoint2D left;
+    [HideInInspector]
     public Rigidbody2D rb_left;
     public SpriteRenderer dogSprite;
     public WheelJoint2D right;
+    [HideInInspector]
     public Rigidbody2D rb_right;
+ 
     private void Start()
     {
         rb_left = left.GetComponent<Rigidbody2D>();
-        rb_right = right.GetComponent<Rigidbody2D>();    
+        rb_right = right.GetComponent<Rigidbody2D>(); 
     }
     public float torqueFactor;
     private void FixedUpdate()
@@ -22,6 +25,7 @@ public class CharacterMovement : MonoBehaviour
         rb_left.AddTorque(torqueFactor * -h);
         rb_right.AddTorque(torqueFactor * -h);
 
+ 
 
         if(h > 0)
             dogSprite.flipX = false;
