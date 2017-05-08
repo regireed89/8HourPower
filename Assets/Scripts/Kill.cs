@@ -16,8 +16,7 @@ public class Kill : MonoBehaviour {
         {
             Destroy(other.gameObject);
             count++;
-        }
-        
+        }        
       }
     // Update is called once per frame
     void Update () {

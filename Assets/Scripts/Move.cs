@@ -11,19 +11,19 @@ public class Move : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey("up"))
+		if (Input.GetKey("w"))
         {
             transform.position += new Vector3(0, 0.7f, 0);
         }
-        if(Input.GetKey("right"))
+        if(Input.GetKey("d"))
         {
             transform.position += new Vector3(0.7f, 0, 0);
         }
-        if(Input.GetKey("down"))
+        if(Input.GetKey("s"))
         {
             transform.position += new Vector3(0, -0.7f, 0);
         }
-        if(Input.GetKey("left"))
+        if(Input.GetKey("a"))
         {
             transform.position += new Vector3(-0.7f, 0, 0);
         }
